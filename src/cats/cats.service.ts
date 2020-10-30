@@ -12,4 +12,9 @@ export class CatsService {
   findAll(): Cat[] {
     return this.cats;
   }
+
+  findOne(id: string): string {
+    console.log('service', id);
+    return `this id is ${id}`;
+  }
 }
